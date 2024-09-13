@@ -1,0 +1,131 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: url('./bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 400px;
+    height: 500px;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+h2 {
+    color: #fff;
+    font-size: 2em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #fff;
+}
+
+.form-group input {
+    width: 100%;
+    height: 50px;
+    padding: 0 35px 0 10px;
+    font-size: 1.2em;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+
+.form-group label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 1.2em;
+    color: #fff;
+    transition: 0.5s;
+}
+
+input:focus ~ label,
+input:valid ~ label {
+    top: -5px;
+}
+
+.form-group i {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1.2em;
+}
+
+p {
+    text-align: center;
+    color: #fff;
+    margin: 10px 0;
+}
+
+p>a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+p>a:hover {
+    text-decoration: underline;
+    font-style: italic;
+}
+
+#btn {
+    width: 100%;
+    height: 50px;
+    border-radius: 40px;
+    border: none;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+#btn:hover {
+    background-color: transparent; /* Make background transparent on hover */
+    color: #f1f1f1d7; /* Change text color on hover */
+    border: 2px solid #000000d7; /* Optional: change border color on hover for visibility */
+}
+/* Hide registration section by default */
+.hidden {
+    display: none;
+}
+
+/* Error message styling */
+.error-message {
+    color: #dc3545;
+    margin-top: 10px;
+}
+
+/* Make sure form sections fit well */
+.login-section,
+.register-section {
+    width: 100%;
+}
